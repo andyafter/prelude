@@ -104,6 +104,21 @@ by Prelude.")
 (require 'prelude-core)
 (require 'prelude-mode)
 (require 'prelude-editor)
+(require 'prelude-helm-everywhere)
+(require 'prelude-python)
+(require 'prelude-common-lisp)
+(require 'prelude-emacs-lisp)
+(require 'prelude-latex)
+(require 'prelude-c)
+(require 'prelude-org)
+(require 'prelude-xml)
+(require 'prelude-yaml)
+(require 'prelude-web)
+(require 'prelude-css)
+(require 'prelude-company)
+;(require 'prelude-flyspell)
+;(require 'prelude-guru)
+(require 'prelude-programming)
 (require 'prelude-global-keybindings)
 
 ;; OSX specific settings
@@ -125,6 +140,10 @@ by Prelude.")
 (when (file-exists-p prelude-personal-dir)
   (message "Loading personal configuration files in %s..." prelude-personal-dir)
   (mapc 'load (directory-files prelude-personal-dir 't "^[^#].*el$")))
+
+;;; Setting some variables here
+(setq prelude-whitespace nil)
+;;; End for the settings of the variables
 
 (message "Prelude is ready to do thy bidding, Master %s!" current-user)
 

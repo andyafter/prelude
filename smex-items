@@ -1,0 +1,19 @@
+
+;; ----- smex-history -----
+(
+ yas-minor-mode
+ yas/expand
+ gdb
+ 5x5
+ cd
+ arp
+ dbx
+)
+
+;; ----- smex-data -----
+(
+ (5x5 . 1)
+ (gdb . 1)
+ (yas/expand . 1)
+ (yas-minor-mode . 1)
+)
