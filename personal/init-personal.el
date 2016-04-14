@@ -7,6 +7,22 @@
 ;;; for yasnippet.
 (prelude-require-package 'helm-c-yasnippet)
 (setq helm-yas-space-match-any-greedy t)
-(global-set-key (kbd "TAB") 'helm-yas-complete)
-(yas-global-mode 1)
+
+(yas-reload-all)
+(add-hook 'c-mode-hook #'yas-minor-mode)
+(global-set-key (kbd "C-x m") 'helm-yas-complete)
+
+;;; starting to initiate some of my favorite keys
+(defun copy-line ()
+  "Copy the current line"
+  (interactive)
+  (move-beginning-of-line nil)
+  (set-mark (point))
+  (move-end-of-line nil)
+  (copy-region-as-kill (mark) (point))
+  (deactivate-mark)
+  )
+
+(global-set-key (kbd "C-c c l") 'copy-line)
+(message "Finishing personal initiation here.")
 ;;;; end of yasnippet configuration

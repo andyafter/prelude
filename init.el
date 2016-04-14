@@ -116,8 +116,6 @@ by Prelude.")
 (require 'prelude-web)
 (require 'prelude-css)
 (require 'prelude-company)
-;(require 'prelude-flyspell)
-;(require 'prelude-guru)
 (require 'prelude-programming)
 (require 'prelude-global-keybindings)
 
