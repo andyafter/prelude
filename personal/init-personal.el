@@ -6,11 +6,12 @@
 
 ;;; for yasnippet.
 (prelude-require-package 'helm-c-yasnippet)
+(require 'helm-c-yasnippet)
 (setq helm-yas-space-match-any-greedy t)
 
 (yas-reload-all)
 (add-hook 'c-mode-hook #'yas-minor-mode)
-(global-set-key (kbd "C-x m") 'helm-yas-complete)
+(global-set-key (kbd "C-c m") 'helm-yas-complete)
 
 ;;; starting to initiate some of my favorite keys
 (defun copy-line ()
@@ -24,5 +25,6 @@
   )
 
 (global-set-key (kbd "C-c c l") 'copy-line)
+(provide 'init-personal)
 (message "Finishing personal initiation here.")
 ;;;; end of yasnippet configuration

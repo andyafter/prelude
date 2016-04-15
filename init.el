@@ -104,21 +104,33 @@ by Prelude.")
 (require 'prelude-core)
 (require 'prelude-mode)
 (require 'prelude-editor)
-(require 'prelude-helm-everywhere)
-(require 'prelude-python)
-(require 'prelude-common-lisp)
-(require 'prelude-emacs-lisp)
-(require 'prelude-latex)
-(require 'prelude-c)
-(with-eval-after-load 'org
- (require 'prelude-org))
-(require 'prelude-xml)
-(require 'prelude-yaml)
-(require 'prelude-web)
-(require 'prelude-css)
-(require 'prelude-company)
 (require 'prelude-programming)
 (require 'prelude-global-keybindings)
+
+;; modules used
+(require 'prelude-erc)
+(require 'prelude-company)
+(require 'prelude-key-chord) ;; Binds useful features to key combinations
+(require 'prelude-c)
+(require 'prelude-helm) ;; Interface for narrowing and search
+(require 'prelude-helm-everywhere) ;; Enable Helm everywhere
+(require 'prelude-common-lisp)
+(require 'prelude-css)
+(require 'prelude-emacs-lisp)
+(require 'prelude-js)
+(require 'prelude-latex)
+(require 'prelude-lisp)
+(with-eval-after-load 'org
+  (require 'prelude-org) ;; Org-mode helps you keep TODO lists, notes and more
+  )
+(require 'prelude-perl)
+(require 'prelude-python)
+(require 'prelude-scheme)
+(require 'prelude-shell)
+(require 'prelude-web) ;; Emacs mode for web templates
+(require 'prelude-xml)
+(require 'prelude-yaml)
+;; end of modules
 
 ;; OSX specific settings
 (when (eq system-type 'darwin)
