@@ -112,7 +112,7 @@ by Prelude.")
 (require 'prelude-company)
 (require 'prelude-key-chord) ;; Binds useful features to key combinations
 (require 'prelude-c)
-(require 'prelude-helm) ;; Interface for narrowing and search
+;(require 'prelude-helm) ;; Interface for narrowing and search
 (require 'prelude-helm-everywhere) ;; Enable Helm everywhere
 (require 'prelude-common-lisp)
 (require 'prelude-css)
@@ -163,3 +163,4 @@ by Prelude.")
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
 ;;; init.el ends here
+(put 'set-goal-column 'disabled nil)

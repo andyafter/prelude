@@ -24,6 +24,8 @@
   (deactivate-mark)
   )
 
+
+
 (global-set-key (kbd "C-c c l") 'copy-line)
 (provide 'init-personal)
 (message "Finishing personal initiation here.")

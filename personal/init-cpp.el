@@ -77,6 +77,10 @@
   (exec-path-from-shell-initialize))
 ;; in order to use gtags
 
+;; this here defines disaster key for disassembly
+(require 'disaster)
+(define-key c-mode-base-map (kbd "C-c c d") 'disaster)
+;; end for disaster
 
 (provide 'init-cpp)
 (message "Finished initiating init-cpp!")
