@@ -27,6 +27,8 @@
 
 
 (global-set-key (kbd "C-c c l") 'copy-line)
+(require 'yasnippet)
+(global-set-key (kbd "C-c q") 'yas-expand)
 (provide 'init-personal)
 (message "Finishing personal initiation here.")
 ;;;; end of yasnippet configuration
