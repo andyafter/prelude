@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: temp less equal
+# key: tle
+# --
+$1 &\ge $2

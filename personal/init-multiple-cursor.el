@@ -1,5 +1,6 @@
 ;; multi cursors
 ;; Code:
+(prelude-require-package 'multiple-cursors)
 (require 'multiple-cursors)
 
 

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: temp greater equal
+# key: tge
+# --
+$1 &\ge $2
