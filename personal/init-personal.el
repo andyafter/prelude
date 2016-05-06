@@ -24,9 +24,18 @@
   (deactivate-mark)
   )
 
+;;; for running projects
+(defun open-robotics-project()
+  "Open Robotics Project"
+  (interactive)
+  (setq path "~/Desktop/robot/")
+  (dired path)
+  (setenv "PYTHONPATH" path)
+ )
 
 
 (global-set-key (kbd "C-c c l") 'copy-line)
+(global-set-key (kbd "C-c c r") 'open-robotics-project)
 (require 'yasnippet)
 (global-set-key (kbd "C-c q") 'yas-expand)
 (provide 'init-personal)
