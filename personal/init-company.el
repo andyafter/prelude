@@ -7,6 +7,7 @@
 
 
 (if (fboundp 'evil-declare-change-repeat)
+    ;;; fboundp return p if function definition is not void.
     (mapc #'evil-declare-change-repeat
           '(company-complete-common
             company-select-next
