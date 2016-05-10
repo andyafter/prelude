@@ -69,4 +69,42 @@
              (" \\(ng-[a-z]*\\)=\"\\([^\"]+\\)" 1 2 "=")))
      ))
 
+(defun indent-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  )
+(add-hook 'web-mode-hook  'indent-web-mode-hook)
+(setq web-mode-style-padding 1)
+(setq web-mode-script-padding 1)
+(setq web-mode-link-padding 1)
+
+(defun untabify-buffer ()
+  (interactive)
+  (untabify (point-min) (point-max)))
+
+
+(defun indent-buffer ()
+  (interactive)
+  (indent-region (point-min) (point-max)))
+
+
+(defun cleanup-buffer ()
+  "Perform a bunch of operations on the whitespace content of a buffer.
+Including indent-buffer, which should not be called automatically on save."
+  (interactive)
+  (untabify-buffer)
+  (delete-trailing-whitespace)
+  (indent-buffer))
+
+
+(defadvice sgml-delete-tag (after reindent-buffer activate)
+  (cleanup-buffer))
+
+
+
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'web-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook  'emmet-mode)
+
 (provide 'init-web-mode)
