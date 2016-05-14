@@ -1,16 +1,77 @@
 
 ;; ----- smex-history -----
 (
- global-linum-mode
- cd
- 5x5
- arp
- dbx
- dig
- erc
+ sgml-mode
+ js2-mode
+ html-mode
+ web-mode-enable
+ package-install
+ lisp-mode
+ js2-refactor-mode
 )
 
 ;; ----- smex-data -----
 (
- (global-linum-mode . 1)
+ (global-linum-mode . 16)
+ (mc/mark-next-like-this . 2)
+ (org-table-create . 4)
+ (octave-mode . 3)
+ (org-mode . 1)
+ (org-insert-todo-subheading . 1)
+ (replace-string . 6)
+ (magit-remote-add . 2)
+ (semantic-mode . 2)
+ (package-install . 31)
+ (company-mode . 2)
+ (gnus-msg-mail . 4)
+ (django-html-mode . 1)
+ (lisp-mode . 2)
+ (eshell . 1)
+ (gnus . 8)
+ (gnus-group-list-groups . 1)
+ (eval-defun . 1)
+ (eval-buffer . 8)
+ (dired . 3)
+ (django-manage . 3)
+ (django-manage-startapp . 2)
+ (dired-do-rename . 2)
+ (dired-do-touch . 1)
+ (mouse-set-mark . 1)
+ (ace-jump-mode . 1)
+ (upcase-region . 1)
+ (downcase-word . 1)
+ (company-complete . 3)
+ (ido-imenu-anywhere . 1)
+ (js-eval . 2)
+ (expand-abbrev . 1)
+ (company-css . 1)
+ (keyfreq-show . 1)
+ (winner-mode . 2)
+ (rotate-windows . 1)
+ (yas-expand . 1)
+ (sgml-mode . 11)
+ (html-mode . 3)
+ (prelude-eval-and-replace . 1)
+ (common-lisp-mode . 1)
+ (org-submit-bug-report . 1)
+ (mail-reply-to . 1)
+ (mail-send . 1)
+ (sgml-delete-tag . 3)
+ (cleanup-buffer . 4)
+ (sgml-indent-line . 1)
+ (clean-buffer-list . 1)
+ (gitignore-mode . 1)
+ (magit-status . 1)
+ (LaTeX-mode . 1)
+ (compile . 1)
+ (helm-M-x . 1)
+ (eval-region . 1)
+ (package-list-packages . 2)
+ (js2-refactor-mode . 2)
+ (org-latex-export-to-pdf . 1)
+ (er/mark-html-attribute . 2)
+ (er/mark-inner-tag . 2)
+ (er/mark-outer-tag . 2)
+ (web-mode-enable . 1)
+ (js2-mode . 1)
 )

@@ -130,7 +130,8 @@ by Prelude.")
 (require 'prelude-python)
 (require 'prelude-scheme)
 (require 'prelude-shell)
-(require 'prelude-web) ;; Emacs mode for web templates
+
+;(require 'prelude-) ;; Emacs mode for web templates
 (require 'prelude-xml)
 (require 'prelude-yaml)
 ;; end of modules

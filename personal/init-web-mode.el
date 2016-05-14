@@ -1,3 +1,5 @@
+(prelude-require-packages '(web-mode))
+;(require 'web-mode)
 (autoload 'web-mode "web-mode")
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.cmp\\'" . web-mode)) ; salesforce
@@ -21,6 +23,20 @@
 (add-to-list 'auto-mode-alist '("\\.xul?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.eex?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.xml?\\'" . web-mode))
+
+(sp-with-modes '(web-mode)
+  (sp-local-pair "%" "%"
+                 :unless '(sp-in-string-p)
+                 :post-handlers '(((lambda (&rest _ignored)
+                                     (just-one-space)
+                                     (save-excursion (insert " ")))
+                                   "SPC" "=" "#")))
+  (sp-local-pair "<% "  " %>" :insert "C-c %")
+  (sp-local-pair "<%= " " %>" :insert "C-c =")
+  (sp-local-pair "<%# " " %>" :insert "C-c #")
+  (sp-local-tag "%" "<% "  " %>")
+  (sp-local-tag "=" "<%= " " %>")
+  (sp-local-tag "#" "<%# " " %>"))
 
 (defun flymake-html-init ()
        (let* ((temp-file (flymake-init-create-temp-buffer-copy

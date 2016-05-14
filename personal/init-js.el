@@ -46,6 +46,8 @@
         ("Task" "[. \t]task([ \t]*['\"]\\([^'\"]+\\)" 1)
         ))
 
+;(require 'js2-refactor)
+;(add-hook 'js2-mode-hook #'js2-refactor-mode)
 
 (provide 'init-js)
 ;;; initiation of javascript ends here
