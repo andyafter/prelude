@@ -5,4 +5,4 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
-;; ;;; dev-helm-smex.el ends here 
+;; ;;; dev-helm-smex.el ends here
