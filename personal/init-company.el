@@ -1,5 +1,6 @@
 ;;; company mode
 (add-hook 'after-init-hook 'global-company-mode)
+(prelude-require-package 'company-statistics)
 (require 'company-statistics)
 (company-statistics-mode)
 

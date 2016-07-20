@@ -2,6 +2,7 @@
 ;;; Code:
 
 ;; Setting up cedet
+(prelude-require-packages '(cc-mode semantic))
 (require 'cc-mode)
 (require 'semantic)
 

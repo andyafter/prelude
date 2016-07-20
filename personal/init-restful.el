@@ -1,3 +1,4 @@
+(prelude-require-packages '(restclient company-restclient ob-restclient))
 (require 'restclient)
 (require 'company-restclient)
 (require 'ob-restclient)

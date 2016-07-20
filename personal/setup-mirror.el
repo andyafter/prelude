@@ -1,1 +1,1 @@
-(require 'elpa-mirror)
+;(require 'elpa-mirror)
