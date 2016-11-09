@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: drawline
+# key: dthi
+# --
+\draw[thick] ($1) -- ($2);

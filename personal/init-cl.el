@@ -1,0 +1,13 @@
+(prelude-require-package 'slime)
+(require 'slime)
+(defun lispy--eval-lisp (str)
+  "Eval STR as Common Lisp code."
+  (unless (slime-current-connection)
+    (let ((wnd (current-window-configuration)))
+      (slime)
+      (while (not (and (slime-current-connection)
+                       (get-buffer-window (slime-output-buffer))))
+        (sit-for 0.2))
+      (set-window-configuration wnd)))
+  (let (deactivate-mark)
+    (cadr (slime-eval `(swank:eval-and-grab-output ,str)))))

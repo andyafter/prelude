@@ -2,26 +2,26 @@
 ;; ----- smex-history -----
 (
  global-linum-mode
- dired
- replace-string
- ace-jump-mode
- eval-region
+ package-install
+ package-list-packages
  eval-buffer
- eval-last-sexp
+ elp-instrument-function
+ linum-mode
+ cleanup-buffer
 )
 
 ;; ----- smex-data -----
 (
- (global-linum-mode . 22)
+ (global-linum-mode . 43)
  (mc/mark-next-like-this . 2)
  (org-table-create . 4)
  (octave-mode . 3)
  (org-mode . 2)
  (org-insert-todo-subheading . 1)
- (replace-string . 8)
+ (replace-string . 16)
  (magit-remote-add . 2)
  (semantic-mode . 2)
- (package-install . 41)
+ (package-install . 44)
  (company-mode . 2)
  (gnus-msg-mail . 4)
  (django-html-mode . 1)
@@ -30,8 +30,8 @@
  (gnus . 8)
  (gnus-group-list-groups . 1)
  (eval-defun . 1)
- (eval-buffer . 10)
- (dired . 10)
+ (eval-buffer . 34)
+ (dired . 15)
  (django-manage . 3)
  (django-manage-startapp . 2)
  (dired-do-rename . 2)
@@ -57,7 +57,7 @@
  (mail-reply-to . 1)
  (mail-send . 1)
  (sgml-delete-tag . 4)
- (cleanup-buffer . 6)
+ (cleanup-buffer . 54)
  (sgml-indent-line . 1)
  (clean-buffer-list . 1)
  (gitignore-mode . 1)
@@ -66,9 +66,9 @@
  (compile . 1)
  (helm-M-x . 1)
  (eval-region . 6)
- (package-list-packages . 2)
+ (package-list-packages . 3)
  (js2-refactor-mode . 2)
- (org-latex-export-to-pdf . 1)
+ (org-latex-export-to-pdf . 7)
  (er/mark-html-attribute . 2)
  (er/mark-inner-tag . 2)
  (er/mark-outer-tag . 2)
@@ -79,12 +79,19 @@
  (paredit-mode . 1)
  (web-mode-tag-end . 2)
  (helm-projectile-grep . 2)
- (yas-new-snippet . 1)
+ (yas-new-snippet . 2)
  (yas-minor-mode . 2)
- (sgml-close-tag . 2)
+ (sgml-close-tag . 3)
  (mc/insert-numbers . 1)
  (projectile-grep . 7)
  (org-insert-link . 4)
  (which-key-mode . 2)
  (eval-last-sexp . 1)
+ (ebuffers . 1)
+ (comment-dwim . 10)
+ (clone-buffer . 1)
+ (prelude-insert-date . 3)
+ (count-matches . 1)
+ (linum-mode . 1)
+ (elp-instrument-function . 1)
 )

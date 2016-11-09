@@ -41,3 +41,4 @@
 (provide 'init-personal)
 (message "Finishing personal initiation here.")
 ;;;; end of yasnippet configuration
+

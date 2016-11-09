@@ -1,0 +1,47 @@
+% Created 2016-07-26 Tue 13:43
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{潘安}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={潘安},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+;;; start initiation of orgmode
+(prelude-require-packages '(org-pdfview))
+
+;; auto truncate line
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
+(require 'ox-latex)
+(add-to-list 'org-latex-classes
+             '("beamer"
+               "$\backslash$\documentclass\[presentation\]$\backslash${beamer$\backslash$}"
+               ("$\backslash$\section$\backslash${\%s$\backslash$}" . "$\backslash$\section*$\backslash${\%s$\backslash$}")
+               ("$\backslash$\subsection$\backslash${\%s$\backslash$}" . "$\backslash$\subsection*$\backslash${\%s$\backslash$}")
+               ("$\backslash$\subsubsection$\backslash${\%s$\backslash$}" . "$\backslash$\subsubsection*$\backslash${\%s$\backslash$}")))
+
+(provide 'init-org)
+;;; end for initiation of org-mode
+\end{document}

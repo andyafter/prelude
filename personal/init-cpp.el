@@ -30,9 +30,8 @@
 
 ;; setting up for gtags
 (add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-              (ggtags-mode 1))))
+          (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
+            (ggtags-mode 1)))
 (define-key ggtags-mode-map (kbd "C-c c s") 'ggtags-find-other-symbol)
 (define-key ggtags-mode-map (kbd "C-c c h") 'ggtags-view-tag-history)
 (define-key ggtags-mode-map (kbd "C-c c r") 'ggtags-find-reference)
@@ -79,6 +78,7 @@
 ;; in order to use gtags
 
 ;; this here defines disaster key for disassembly
+(prelude-require-package 'disaster)
 (require 'disaster)
 (define-key c-mode-base-map (kbd "C-c c d") 'disaster)
 ;; end for disaster
