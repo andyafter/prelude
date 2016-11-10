@@ -7,6 +7,7 @@
 (require 'smartparens)
 (add-hook 'prog-mode-hook 'paredit-everywhere-mode)
 
+(global-set-key (kbd "M-?") 'paredit-convolute-sexp)
 
 (provide 'init-paredit)
 ;;; end for initiation of paredit
