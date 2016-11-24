@@ -8,6 +8,7 @@
 (add-hook 'prog-mode-hook 'paredit-everywhere-mode)
 
 (global-set-key (kbd "M-?") 'paredit-convolute-sexp)
+(global-set-key (kbd "M-J") 'paredit-join-sexps)
 
 (provide 'init-paredit)
 ;;; end for initiation of paredit
