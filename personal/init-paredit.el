@@ -10,5 +10,7 @@
 (global-set-key (kbd "M-?") 'paredit-convolute-sexp)
 (global-set-key (kbd "M-J") 'paredit-join-sexps)
 
+(global-set-key (kbd "C-k") 'paredit-kill)
+
 (provide 'init-paredit)
 ;;; end for initiation of paredit
