@@ -34,7 +34,8 @@
  )
 
 
-(global-set-key (kbd "C-c c l") 'copy-line)
+
+(global-set-key (kbd "C-c c y") 'copy-line)
 (global-set-key (kbd "C-c c r") 'open-robotics-project)
 (require 'yasnippet)
 (global-set-key (kbd "C-c q") 'yas-expand)
