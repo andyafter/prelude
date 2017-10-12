@@ -25,18 +25,13 @@
   )
 
 ;;; for running projects
-(defun open-robotics-project()
+(defun open-planner-project()
   "Open Robotics Project"
   (interactive)
-  (setq path "~/Desktop/robot/")
-  (dired path)
-  (setenv "PYTHONPATH" path)
- )
-
-
+  (setq path "/User/andy.pan/gopath/src/github.com/myteksi/go/dispatcher/grab-x/planner"))
 
 (global-set-key (kbd "C-c c y") 'copy-line)
-(global-set-key (kbd "C-c c r") 'open-robotics-project)
+(global-set-key (kbd "C-c c p") 'open-planner-project)
 (require 'yasnippet)
 (global-set-key (kbd "C-c q") 'yas-expand)
 (provide 'init-personal)
